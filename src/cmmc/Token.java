@@ -18,8 +18,8 @@ public class Token {
 	private Object value;
 
 	/**
-	 * @param reserved
-	 * @param word
+	 * @param type
+	 * @param value
 	 */
 	public Token(TokenType type, Object value) {
 		this.type = type;
