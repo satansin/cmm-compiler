@@ -9,7 +9,7 @@ package cmmc;
  */
 public class Token {
 
-	public enum TokenType { ID, NUM, OPERATOR, RESERVED };
+	//public enum TokenType { ID, NUM, OPERATOR, RESERVED };
 	
 	private TokenType type;
 	
@@ -27,15 +27,26 @@ public class Token {
 		this.value = value;
 	}
 
-	/**
-	 * @Title: setInnerCode
-	 * @Description: TODO
-	 * @param @param i 
-	 * @return void 
-	 * @throws
-	 */
 	public void setInnerCode(int innerCode) {
 		this.innerCode = innerCode;
+	}
+
+	public TokenType getType() {
+		return type;
+	}
+
+	public int getInnerCode() {
+		return innerCode;
+	}
+
+	public Object getValue() {
+		return value;
+	}
+
+	@Override
+	public String toString() {
+		return "Token [type=" + type + ", innerCode=" + innerCode + ", value="
+				+ value + "]";
 	}
 
 }

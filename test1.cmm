@@ -1,0 +1,16 @@
+switch (resultType) {
+		case ID:
+			idTable.registerToken(token);
+			break;
+		case NUM:
+			numTable.registerToken(token);
+			break;
+		case BINARY_ARITHMETIC_OP:
+		case UNARY_ARITHMETIC_OP:
+		case SHIFT_OP:
+		case RELATION_OP:
+		case LOGIC_OP:
+		case ASSIGNMENT_OP:
+		3
+		4
+		6.7
