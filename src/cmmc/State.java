@@ -8,13 +8,21 @@ public class State {
 	
 	private boolean isEndState;
 	
-	private TokenType endStateType;
+//	private TokenType endStateType;
+	
+	private String endStateType;
 	
 	public State() {
 		this(false, null);
 	}
 
-	public State(boolean isEndState, TokenType endStateType) {
+//	public State(boolean isEndState, TokenType endStateType) {
+//		this.startEdges = new ArrayList<Edge>();
+//		this.isEndState = isEndState;
+//		this.endStateType = endStateType;
+//	}
+	
+	public State(boolean isEndState, String endStateType) {
 		this.startEdges = new ArrayList<Edge>();
 		this.isEndState = isEndState;
 		this.endStateType = endStateType;
@@ -28,7 +36,11 @@ public class State {
 		return isEndState;
 	}
 	
-	public TokenType getEndStateType() {
+//	public TokenType getEndStateType() {
+//		return endStateType;
+//	}
+	
+	public String getEndStateType() {
 		return endStateType;
 	}
 

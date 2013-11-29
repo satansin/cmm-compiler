@@ -18,5 +18,9 @@ public class Edge {
 	public State getPointedState() {
 		return pointedState;
 	}
+	
+	public void setPointedState(State state) {
+		this.pointedState = state;
+	}
 
 }
